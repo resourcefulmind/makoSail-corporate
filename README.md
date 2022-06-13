@@ -24,8 +24,12 @@ File/folder Structure:
 
         <Header />
         <About />
-        <Work Projects />
+        <Subsidiaries />
+        <MeetTheCEO>
         <Skills Team/>
+        <SolarHeader>
+        <SolarAbout>
+        <SolarProjects>
         <Testimonial />
         <AquaticsHeader>
         <AquaticsAbout>
@@ -36,3 +40,7 @@ File/folder Structure:
         <TechAbout>
         <TechTestimonial>
         <Footer />
+
+- Importing every single image asset to be used, in the images.js file and then exporting them so that it can be easily imported in one line with a meaningful name.
+
+- BEM is simply a frontend naming method.
