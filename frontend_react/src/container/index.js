@@ -18,3 +18,7 @@ export { default as SolarAbout } from './SolarAbout/SolarAbout';
 export { default as SolarProjects } from './SolarProjects/SolarProjects';
 export { default as Subsidiaries } from './Subsidiaries/Subsidiaries';
 export { default as SolarTestimonial } from './SolarTestimonial/SolarTestimonial';
+export { default as ConstructionAbout } from './ConstructionAbout/ConstructionAbout'
+export { default as ConstructionHeader } from './ConstructionHeader/ConstructionHeader'
+export { default as ConstructionProjects } from './ConstructionProjects/ConstructionProjects'
+export { default as ConstructionTestimonials } from './ConstructionTestimonials/ConstructionTestimonials'
