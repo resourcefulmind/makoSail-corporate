@@ -10,6 +10,14 @@
     --gray-color: #6b7688;
     --brown-color: #46364a;
     --white-color: #ffffff;
+    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+
+    --color-bg: #040C18;
+    --color-footer: #031B34;
+    --color-blog: #042c54;
+    --color-text: #81AFDD;
+    --color-subtext: #FF8A71;
 }
 
 * {
@@ -17,6 +25,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
 }
 
 /* h1 {
