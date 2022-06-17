@@ -34,6 +34,7 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import makosail_makeshift_logo from '../assets/makosail_makeshift_logo.png';
 
 export default { 
   email, 
@@ -69,4 +70,5 @@ export default {
   nb,
   skype,
   spotify,
+  makosail_makeshift_logo
 };

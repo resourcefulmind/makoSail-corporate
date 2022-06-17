@@ -3,23 +3,69 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 // import { RiMenuFoldFill } from 'react-icons/ri'
 // import { HiX } from 'react-icons/hi'
 // import { motion } from "framer-motion"
-
-
 import { images } from '../../constants';
 import './Navbar.scss';
 
 
+const Menu = () => (
+  <>
+    <p><a href="#home">Home</a></p>
+    <p><a href="#about">Who We Are</a></p>
+    <p><a href="#construction">Construction</a></p>
+    <p><a href="#solar">Solar</a></p>
+    <p><a href="#swim">Swimming Academy</a></p>
+    <p><a href="#tech">Tech Hub</a></p>
+  </>
+)
+
 const Navbar = () => {
-  // const [toggle, setToggle] = useState(false)
+   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <div className="makosail__navbar">
       <div className="makosail__navbar-links">
-        <div className="gpt3__navbar-links_logo">
-          <img src={images.logo} alt="logo" style={{ width: 176, height: 36 }} />
+        <div className="makosail__navbar-links_logo"> 
+          <img src={images.makosail_makeshift_logo} alt="logo" />
+        </div>
+        <div className="makosail__navbar-links_container">
+          <Menu />
         </div>
       </div>
+      <div className="makosail__navbar-sign">
+        <p>Give Us A Call ?</p>
+        <button type='button'>Contact Us</button>
+      </div>
+      <div className="makosail__navbar-menu">
+        {toggleMenu
+          ? <RiCloseLine color='#fff' size={27} onClick={() => setToggleMenu(false)} />
+          : <RiMenu3Line color='#fff' size = {27} onClick={() => setToggleMenu(true)} />
+        }
+        { toggleMenu && (
+          <div className='makosail__navbar-menu_container scale-up-center'>
+              <div className='makosail__navbar_container-links'>
+                <Menu />
+                <div className="makosail__navbar-menu_container-links-sign">
+                  <p>Contact Us</p>
+                  <button type='button'>Get a Quote</button>
+                </div>
+              </div>
+          </div>
+        ) }
+      </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     // <nav className='app__navbar'>
     //   <div className='app__navbar-logo'>
     //     <img src={images.logo} alt="logo" />
