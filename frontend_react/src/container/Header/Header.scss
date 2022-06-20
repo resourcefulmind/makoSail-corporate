@@ -209,4 +209,117 @@
 //     }
 // }
 
+.makosail__header {
+    display: flex;
+}
 
+.makosail__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.makosail__header-content h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+
+    font-style: normal;
+    font-size: 3.875em;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.makosail__header-content p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 27px;
+    color: #81AFDD;
+    margin-top: 1.5rem;
+}
+
+.makosail__header-content__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+}
+
+.makosail__header-content__input input {
+    flex: 2;
+    width: 100%;
+    background: var(--color-footer);
+    border-radius: 5px 0px 0px 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25em;
+    line-height: 27px;
+    min-height: 50px;
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.makosail__header-content__input button {
+    flex: 0.5;
+    width: 100%;
+    min-height: 50px;
+    background: #FF4820;
+    border-radius: 0px 5px 5px 0px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 27px;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+
+}
+
+.makosail__header-content__people {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+.makosail__header-content__people img {
+    width: 181.79px;
+    height: 38px;
+}
+
+.makosail__header-content__people p {
+    margin: 0 0 0 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: 38px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.makosail__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.makosail__header-image img{
+    width: 100%;
+    height: 100%;
+}

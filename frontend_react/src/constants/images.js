@@ -35,6 +35,9 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import makosail_makeshift_logo from '../assets/makosail_makeshift_logo.png';
+import people from '../assets/people.png';
+import fourthheader from '../assets/fourthheader-removebg.png';
+
 
 export default { 
   email, 
@@ -70,5 +73,8 @@ export default {
   nb,
   skype,
   spotify,
-  makosail_makeshift_logo
+  makosail_makeshift_logo, 
+  people, 
+  fourthheader
+
 };
