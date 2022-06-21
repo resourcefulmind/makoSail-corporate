@@ -37,6 +37,7 @@ import spotify from '../assets/spotify.png';
 import makosail_makeshift_logo from '../assets/makosail_makeshift_logo.png';
 import people from '../assets/people.png';
 import fourthheader from '../assets/fourthheader-removebg.png';
+import ai from '../assets/ai.png';
 
 
 export default { 
@@ -75,6 +76,7 @@ export default {
   spotify,
   makosail_makeshift_logo, 
   people, 
-  fourthheader
+  fourthheader, 
+  ai
 
 };

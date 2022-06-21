@@ -278,7 +278,7 @@
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 27px;
     color: #FFFFFF;
     cursor: pointer;
@@ -320,6 +320,66 @@
 }
 
 .makosail__header-image img{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 1050px) {
+    .makosail__header {
+        flex-direction: column;
+    }
+
+    .makosail__header-content {
+        margin: 0 0 3rem;
+      }
+}
+
+@media screen and (max-width: 782px) {
+    .makosail__header-content__input input, 
+    .makosail__header-content__input button {
+        font-size: 0.9em;
+        line-height: 1em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .makosail__header h1{
+        font-size: 2.5em;
+    }
+
+    .makosail__header p {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    .makosail__header-content__people {
+        flex-direction: column;
+    }
+
+    .makosail__header-content__people p {
+        margin: 0;
+    }
+
+    .makosail__header-content__input input, 
+    .makosail__header-content__input button {
+        font-size: 0.75em;
+        line-height: 1em;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .makosail__header h1 {
+        font-size: 2.25em;
+    }
+
+    .makosail__header p {
+        font-size: 1em;
+    }
+
+    .makosail__header-content__input input, 
+    .makosail__header-content__input button {
+        font-size: 0.75em;
+        line-height: 1em;
+    }
 }
