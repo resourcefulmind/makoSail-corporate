@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import './Feature.scss';
 
 const Feature = ({ title, text }) => {
   return (
@@ -7,8 +9,8 @@ const Feature = ({ title, text }) => {
             <div />
             <h1>{title}</h1>
         </div>
-        <div className='makosail__features-container_feature-text'>
-            {text}
+        <div className='makosail__features-container__feature-text'>
+            <p>{text}</p>
         </div>
     </div>
   )

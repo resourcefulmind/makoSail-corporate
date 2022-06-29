@@ -1,0 +1,158 @@
+.makosail__construction__about__hero {
+    position: relative;
+    height: 100vh;
+    background: url("../../assets/bgIMG.png") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    padding: 12rem 12rem;
+
+    flex-direction: column;
+}
+
+.makosail__construction__about__hero-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.makosail__construction__about__hero-text_wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 785px;
+    // margin: 5rem;
+    margin-top: 15rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    // margin-left: 2rem;
+    // margin-right: 2rem;
+}
+
+.makosail__construction__about__hero-title {
+    font-weight: 600;
+    font-size: 4.4rem;
+    line-height: 6.7rem;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.makosail__construction__about__hero-subtitle {
+    font-weight: 500;
+    font-stretch: normal;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 2rem;
+    color: var(--white-color);
+
+}
+
+.makosail__construction__about__hero-text_wrapper .btn-2 {
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.3125rem; 
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -.56px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    padding: 1.5625rem 3.1875rem;
+    display: inline-block;
+    text-align: center;
+    min-width: 230px;
+    overflow: hidden;
+    background: 0 0;
+    outline: 0;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    border-radius: 0!important;
+}
+
+.makosail__construction__about__hero-text_wrapper .btn-2-space {
+    margin-left: 1rem;
+}
+
+
+
+.makosail__construction__about__hero-text_wrapper .btn-2:hover {
+    background: #343a40;
+}
+
+@media screen and (max-width: 670px) {
+    .makosail__construction__about__hero-title {
+        font-size: 3.5rem;
+    }
+
+    .makosail__construction__about__hero-text_wrapper {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .makosail__construction__about__hero-text_wrapper .btn-2 {
+        display: flex;
+        flex-direction: column;
+        max-width: 430px;
+        margin-left: 0;
+        margin-top: 1rem;
+
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .makosail__construction__about__hero-text_wrapper {
+        margin-top: 5rem;
+    }
+}
+
+@media screen and (max-width: 566px) {
+
+    .makosail__construction__about__hero-title {
+        font-size: 2.5rem;
+    }
+
+    // .makosail__construction__about__hero-text_wrapper {
+    //     margin-top: 0;
+    // }
+}
+
+@media screen and (max-width: 450px) {
+
+    .makosail__construction__about__hero-title {
+        font-size: 2rem;
+    }
+
+    .makosail__construction__about__hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .makosail__construction__about__hero-text_wrapper {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 397px) {
+
+    .makosail__construction__about__hero-title {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .makosail__construction__about__hero-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .makosail__construction__about__hero-text_wrapper .btn-2 {
+        width: 100px;
+        padding: 1rem 1.5rem;
+
+    }
+
+}
