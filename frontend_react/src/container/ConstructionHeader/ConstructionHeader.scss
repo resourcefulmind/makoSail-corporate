@@ -1,0 +1,100 @@
+.makosail__construction__hero {
+    position: relative;
+    height: 100vh;
+    background: url("../../assets/bgIMG.png") no-repeat center center;
+    display: flex;
+    justify-content: center;
+    padding: 12rem 12rem;
+    flex-direction: column;
+    border-bottom: 2px solid black;
+}
+
+.makosail__construction__hero-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.makosail__construction__hero-text_wrapper {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 20rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+
+.makosail__construction__hero-title {
+    font-weight: 600;
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 3.7rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.makosail__construction__hero-subtitle {
+    font-weight: normal;
+    letter-spacing: 0.85px;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: #fff;
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.makosail__construction__hero-text_wrapper .btn-1  {
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    line-height: 25px;
+    max-width: 300.33px;
+    width: 100%;
+    height: 67px;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    cursor: pointer; 
+    background:#FF4820;
+    // backdrop-filter: blur(40px);
+}
+
+.makosail__construction__hero-text_wrapper .btn-1:hover {
+    background-color: rgb(255, 69, 0);
+    opacity: 1;
+}
+
+// MEDIA QUERY
+
+@media screen and (max-width: 1181px) {
+    .makosail__construction__hero-title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .makosail__construction__hero-title {
+        font-size: 1.5rem;
+    }
+
+    .makosail__construction__hero-subtitle {
+        font-size: 0.9rem;
+
+    }
+}
+
+@media screen and (max-width: 773px) {
+    .makosail__construction__hero-text_wrapper {
+        margin-top: 15rem;
+    }
+}

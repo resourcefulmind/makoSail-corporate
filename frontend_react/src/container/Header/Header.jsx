@@ -77,13 +77,14 @@
 
 import React from 'react';
 
+// import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
 
 const Header = () => {
   
   return (
-    <div className='makosail__header section__padding' id='home'>
+    <div className='makosail__header section__padding'>
       <div className="makosail__header-content">
         <h1 className="gradient__text">Makosail, A Race To Innovate, a World of Rewarding Experiences. </h1>
         <p>The MakoSail Group of companies anticipate global world trends in all spheres of life. We believe it's important for everyone to have access and we encourage diversity. Join the thousands of African & Global households & enterprises, utilizing our suite of services.</p>
