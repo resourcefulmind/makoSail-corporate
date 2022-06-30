@@ -1,6 +1,6 @@
 export default {
-    name: 'works',
-    title: 'Works',
+    name: 'makosail',
+    title: 'Makosail Construction Projects',
     type: 'document',
     fields: [
       {
