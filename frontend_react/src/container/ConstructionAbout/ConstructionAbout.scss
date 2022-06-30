@@ -1,23 +1,37 @@
+
+.construction__img-container {
+    width: 100%;
+
+}
+
 .makosail__construction__about__hero {
     position: relative;
     height: 100vh;
-    background: url("../../assets/bgIMG.png") no-repeat center center;
+    background: url("../../assets/constructionpartner2.jpg") no-repeat center center fixed;
     display: flex;
     justify-content: center;
-    padding: 12rem 12rem;
+    // padding: 12rem 12rem;
+    // object-fit: contain;
 
     flex-direction: column;
+    width: 100%;
 }
 
+
+
 .makosail__construction__about__hero-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: black;
-    opacity: 0.3;
-    z-index: 1;
+    // position: absolute;
+    // top: 0;
+    // bottom: 0;
+    // right: 0;
+    // left: 0;
+    // background-color: black;
+    // opacity: 0.2;
+    // z-index: 1;
+    background: rgba(black, 0.66);
+    color: white;
+    position: relative;
+    height: 100vh;
 }
 
 .makosail__construction__about__hero-text_wrapper {
@@ -82,7 +96,7 @@
 
 
 .makosail__construction__about__hero-text_wrapper .btn-2:hover {
-    background: #343a40;
+    background: black;
 }
 
 @media screen and (max-width: 670px) {
@@ -156,3 +170,4 @@
     }
 
 }
+

@@ -24,19 +24,28 @@ const ConstructionProjects = () => {
   }, [])
   
 
-  const handleWorkFilter = (item) => {
+  const handleProjectFilter = (item) => {
+    setActiveFilter(item);
+    setAnimateCard([{ y:100, opacity: 0 }])
 
+    setTimeout(() => {
+      setAnimateCard([{ y:0, opacity: 1 }])
+
+      if(item === 'All') {
+        setFilterMakosail(makosail.filter((makosail) => makosail.tags.includes(item)))
+      }
+    }, 500)
   }
 
   return (
-    <div className='makosail__construction__projects section__margin'>
+    <div className='makosail__construction__projects'>
             <>
                 <h2 className="makosail__construction__projects__head-text">Construction <span className='gradient__text'>Project</span> Highlights</h2>
                 <div className="makosail__construction__projects-filter">
                   {['Residential', 'Industrial', 'Maintenance', 'All'].map((item, index) => (
                     <div
                       key={index} 
-                      onClick={() => handleWorkFilter(item)} 
+                      onClick={() => handleProjectFilter(item)} 
                       className={`makosail__construction__projects-filter-item app__flex makosail__construction__filter-text ${activeFilter === item ? 'item-active' : ''} `}
                     >
                       {item}
