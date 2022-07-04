@@ -1,12 +1,12 @@
 .makosail__construction__hero {
     position: relative;
     height: 100vh;
-    background: url("../../assets/bgIMG.png") no-repeat center center;
+    background: url("../../assets/constructionheader.jpg") no-repeat center center fixed;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 12rem 12rem;
     flex-direction: column;
-    border-bottom: 2px solid black;
 }
 
 .makosail__construction__hero-overlay {
@@ -15,9 +15,11 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #000;
-    opacity: 0.5;
+    // opacity: 0.5;
     z-index: 1;
+    background: rgba(black, 0.66);
+    color: white;
+
 }
 
 .makosail__construction__hero-text_wrapper {
@@ -65,13 +67,13 @@
     font-size: 1.125rem;
     color: #FFFFFF;
     cursor: pointer; 
-    background:#FF4820;
+    background:#c64c31;
     // backdrop-filter: blur(40px);
 }
 
 .makosail__construction__hero-text_wrapper .btn-1:hover {
     background-color: rgb(255, 69, 0);
-    opacity: 1;
+    // opacity: 1;
 }
 
 // MEDIA QUERY

@@ -14,7 +14,7 @@ const ConstructionHeader = () => {
             <p className="makosail__construction__hero-subtitle">
               We provide simple and innovative solutions to deliver complex projects on time
             </p>
-            <a href="#construction_about" className='btn-1'>Learn More</a>
+            <a href="#const-project-highlights" className='btn-1'>Learn More</a>
           </div>
         </div>
       </div>

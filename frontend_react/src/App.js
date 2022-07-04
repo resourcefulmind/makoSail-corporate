@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { About, Footer, Header, Testimonial, AquaticAbout, AquaticHeader, AquaticTeam, AquaticTestimonial, AquaticWork, TechAbout, TechHeader, TechTestimonial, MeetTheCeo, SolarHeader, SolarAbout, SolarProjects, SolarTestimonial, ConstructionHeader, ConstructionAbout, ConstructionProjects, ConstructionTestimonials, OurTeam } from './container';
+import { About, Footer, Header, AquaticAbout, AquaticHeader, AquaticTeam, AquaticTestimonial, AquaticWork, TechAbout, TechHeader, TechTestimonial, MeetTheCeo, SolarHeader, SolarAbout, SolarProjects, SolarTestimonial, ConstructionHeader, ConstructionAbout, ConstructionProjects, ConstructionTestimonials, OurTeam } from './container';
 import { Navbar } from './components';
 import './App.scss';
 
@@ -15,14 +15,13 @@ const App = () => {
         <MeetTheCeo />
         <OurTeam />
         <ConstructionHeader />
-        <ConstructionAbout />
         <ConstructionProjects />
+        <ConstructionAbout />
         <ConstructionTestimonials />
         <SolarHeader />
         <SolarAbout />
         <SolarProjects />
         <SolarTestimonial />
-        <Testimonial />
         <AquaticHeader />
         <AquaticAbout />
         <AquaticWork />
