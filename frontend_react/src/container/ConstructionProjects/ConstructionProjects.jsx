@@ -32,13 +32,15 @@ const ConstructionProjects = () => {
       setAnimateCard([{ y:0, opacity: 1 }])
 
       if(item === 'All') {
+        setFilterMakosail(makosail);
+      } else {
         setFilterMakosail(makosail.filter((makosail) => makosail.tags.includes(item)))
       }
     }, 500)
   }
 
   return (
-    <div className='makosail__construction__projects'>
+    <div className='makosail__construction__projects' id='const-project-highlights'>
             <>
                 <h2 className="makosail__construction__projects__head-text">Construction <span className='gradient__text'>Project</span> Highlights</h2>
                 <div className="makosail__construction__projects-filter">
