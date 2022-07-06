@@ -1,26 +1,25 @@
 export default{
-    name:'skills',
-    title:'Skills',
+    name:'solarTeam',
+    title:'Solar Team',
     type: 'document',
     fields:[
         {
-            name:'name',
+            name:'title',
             title:'Name',
             type:'string'
         },
         {
-            name:'bgColor',
-            title:'BgColor',
+            name:'description',
+            title:'Role Description',
             type:'string'
         },
         {
-            name:'icon',
-            title:'Icon',
+            name:'imgUrl',
+            title:'ImgUrl',
             type: 'image',
             options: {
               hotspot: true,
             },
         },
-        
     ]
 }
