@@ -7,11 +7,11 @@ import testimonials from './testimonials'
 import team from './team'
 import brands from './brands'
 import contact from './contact'
-import experiences from './experiences'
-import workExperience from './workExperience'
-import skills from './skills'
 import makosail from './makosail'
-
+import solarTeam from './solarTeam'
+import solarProjects from './solarProjects'
+import solarBrands from './solarBrands'
+import solarTestimonials from './solarTestimonials'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -25,9 +25,10 @@ export default createSchema({
     team, 
     brands, 
     contact, 
-    experiences, 
-    workExperience, 
-    skills, 
-    makosail
+    makosail, 
+    solarTeam, 
+    solarProjects, 
+    solarBrands, 
+    solarTestimonials
   ]),
 })
