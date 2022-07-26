@@ -11,7 +11,6 @@ import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
 import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
-import python from '../assets/python.png';
 import react from '../assets/react.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
@@ -54,7 +53,6 @@ export default {
   javascript,
   mu5,
   node,
-  python,
   react,
   redux,
   sass,
