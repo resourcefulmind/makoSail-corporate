@@ -12,6 +12,7 @@ export { default as TechTestimonial } from './TechTestimonial/TechTestimonial';
 export { default as MeetTheCeo } from './MeetTheCeo/MeetTheCeo';
 export { default as SolarHeader } from './SolarHeader/SolarHeader';
 export { default as SolarAbout } from './SolarAbout/SolarAbout';
+export { default as SolarProducts } from './SolarProducts/SolarProducts'
 export { default as SolarProjects } from './SolarProjects/SolarProjects';
 export { default as SolarTestimonial } from './SolarTestimonial/SolarTestimonial';
 export { default as ConstructionAbout } from './ConstructionAbout/ConstructionAbout'
