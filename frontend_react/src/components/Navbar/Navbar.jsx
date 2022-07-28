@@ -32,8 +32,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className="makosail__navbar-sign">
-        <p>Give Us A Call ?</p>
-        <button type='button'>Contact Us</button>
+        <a href="tel:+"><span href="#call">Give Us A Call ?</span></a>
+        <button type='button'><a href="#contact_us">Contact Us</a></button>
       </div>
       <div className="makosail__navbar-menu">
         {toggleMenu
