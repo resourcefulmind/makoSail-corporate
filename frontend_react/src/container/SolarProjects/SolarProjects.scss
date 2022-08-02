@@ -1,0 +1,246 @@
+.makosail__solar__projects {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    // flex: 1;
+
+    padding: 2rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+// .solar__margin {
+//     margin: 0rem 3rem;
+// }
+
+.app__works {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    border: 2px solid green;
+}
+
+.makosail__solar__projects__head-text {
+    font-size: 3.75rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--white-color);
+    text-transform: capitalize;
+  
+    span {
+      text-align: center;
+    }
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 4rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
+    }
+}
+
+.makosail__solar__filter-text {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -0.56px;
+    color: var(--color-text);
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.bold-text {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--white-color);
+    text-align: left;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+}
+
+.p-text {
+    font-size: 1rem;
+    text-align: left;
+    color: var(--color-text);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+}
+
+.makosail__solar__projects-filter {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 4rem 0 2rem;
+
+    .makosail__solar__projects-filter-item {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: #fff;
+        font-weight: 800;
+        color: #042c54;
+        margin-left: 0.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        margin: 0.5rem;
+
+        &:hover {
+            background-color: var(--color-bg);
+            color: var(--white-color);
+        }
+
+        @media screen and (min-width: 2000px) {
+            padding: 1rem 2rem;
+            border-radius: 0.85rem;
+        }
+    }
+
+    .item-active {
+        background-color: var(--color-bg);
+        color: #fff;
+    }
+}
+
+.makosail__solar__projects-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .makosail__solar__projects-item {
+        width: 500px;
+        flex-direction: column;
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: #000;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: var(--white-color);
+
+        &:hover {
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+        }
+
+        @media screen and (min-width: 2000px) {
+            width: 640px;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+        }
+
+        @media screen and (max-width: 300px) {
+            width: 100%;
+            margin: 1rem;
+        }
+    }
+}
+
+.makosail__solar__projects-img {
+    width: 100%;
+    // height: 400px;
+
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (min-width: 2000px) {
+        // height: 520px;
+    }
+
+}
+
+.makosail__solar__projects-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+
+    div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        margin: 1rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        svg {
+            width: 50%;
+            height: 50%;
+            color: var(--white-color);
+        }
+    }
+}
+
+.makosail__solar__projects-content {
+    padding: 0.5rem;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+
+    h4 {
+        margin-top: 1rem;
+        line-height: 1.5;
+        color: #042c54;
+    }
+
+    .makosail__solar__projects-tag {
+        position: absolute;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        background-color: #fff;
+        top: -30px;
+        font-weight: 800;
+
+    }
+
+}
+
