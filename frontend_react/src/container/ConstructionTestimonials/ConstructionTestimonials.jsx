@@ -38,6 +38,7 @@ const ConstructionTestimonial = () => {
       <>
         {testimonials.length && (
           <>
+            <h4 className="testimonial__heading__text">What <span className='gradient__text'>Our Customers</span> Are Saying</h4>
             <div className='makosail__testimonial-item app__flex'>
               <img src={urlFor(testimonials[currentIndex].imgurl)} alt={testimonials[currentIndex].name} />
               <div className="makosail__testimonial-content">
