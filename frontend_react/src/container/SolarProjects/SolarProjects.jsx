@@ -43,7 +43,7 @@ const SolarProjects = () => {
   return (
     <div className='makosail__solar__projects' id='const-project-highlights'>
             <>
-                <h2 className="makosail__solar__projects__head-text">Solar <span className='gradient__text'>Project</span> Highlights</h2>
+                <h2 className="makosail__solar__projects__head-text">MakoSail <span className='gradient__text'>Solar Project</span> Highlights</h2>
                 <div className="makosail__solar__projects-filter">
                   {['Installation', 'Maintenance', 'Survey', 'All'].map((item, index) => (
                     <div
