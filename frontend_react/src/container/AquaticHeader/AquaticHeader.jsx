@@ -13,7 +13,7 @@ const AquaticHeader = () => {
           <source src={kidswim} type='video/mov'/>
         </video>
         <header className='makosail__aquatic__video-header'>
-          <h1>Start a lifetime of <span>Water Adventures</span>at the MakoSail Swimming Academy</h1>
+          <h1>Start a lifetime of <span>Water Adventures</span>at the MakoSail SwimAcademy</h1>
         </header>
       </div>
     </div>
