@@ -14,10 +14,10 @@ const AquaticAbout = () => {
         <p>Passionate Character Building in One Stroke at a Time</p>
       </div>
       <div className="makosail__aquatic__about-container">
-        <Feature title="Experienced Staff" text="We all have one thing in common: a passion for sport and a unique approach. We organize new types of pool activities." />
-        <Feature title="Full Development" text="We participate in various courses and learn about new trends in swimming teaching."/>
-        <Feature title="Modern Methods" text="We work with pure passion for sport and the desire to promote an active lifestyle."/>
-        <Feature title="Unique School" text="We want to change the approach of children and their parents to learning to swim."/>
+        <Feature title="Experienced Staff" text=" We understand that as a parent, your child's safety is paramount. At Swim Academy, we believe your swimmers deserve to be in the best hands at all times, which is why our instructors go through an extensive recruitment process and a comprehensive training period." />
+        <Feature title="Full Development" text="The priority in our school is taking care of the health and safety of users and learning through fun. That is why parents are so eager to enroll their children in our school. We participate in various courses and learn about new trends in swimming teaching."/>
+        <Feature title="Modern Methods" text="We all have one thing in common: a passion for sport and a unique approach. We organize new types of pool activities. We work with pure passion for sport and the desire to promote an active lifestyle."/>
+        <Feature title="Unique School" text="We want to change the approach of children and their parents to learning to swim. Our teachers are in the water with their students, figuring out what each kid needs to learn."/>
       </div>
     </div>
   )
