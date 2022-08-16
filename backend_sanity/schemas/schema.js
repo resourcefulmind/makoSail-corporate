@@ -13,6 +13,8 @@ import solarProjects from './solarProjects'
 import solarBrands from './solarBrands'
 import solarTestimonials from './solarTestimonials'
 import solarProducts from './solarProducts'
+import aquaCarousel from './aquaCarousel'
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -30,6 +32,7 @@ export default createSchema({
     solarProjects, 
     solarBrands, 
     solarTestimonials, 
-    solarProducts
+    solarProducts, 
+    aquaCarousel, 
   ]),
 })
