@@ -1,7 +1,6 @@
 import * as React  from 'react';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { MdOutlineGppGood } from 'react-icons/md';
-import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 
@@ -51,7 +50,7 @@ const AquaticWork = () => {
               <li><span><MdOutlineGppGood /></span>Modern Equipment</li>
               <li><span><MdOutlineGppGood /></span>Introductory lesson</li>
             </ul>
-          </div>
+         </div>
         </div>
         <div className="carousel-container">
           {aquaCarousel.length && ( 

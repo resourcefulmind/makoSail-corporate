@@ -11,7 +11,7 @@ const AquaticAbout = () => {
       </div>
       <div className="makosail__aquatic__about-heading">
         <h1 className="gradient__text">You Should Choose Us</h1>
-        <p>Passionate Character Building in One Stroke at a Time</p>
+        <p>Passionate Character Building, One Stroke at a Time</p>
       </div>
       <div className="makosail__aquatic__about-container">
         <Feature title="Experienced Staff" text=" We understand that as a parent, your child's safety is paramount. At Swim Academy, we believe your swimmers deserve to be in the best hands at all times, which is why our instructors go through an extensive recruitment process and a comprehensive training period." />
