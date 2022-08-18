@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { MdOutlineGppGood } from 'react-icons/md';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
+import { AiFillFolder } from 'react-icons/ai';
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,6 +16,7 @@ const AquaticWork = () => {
   //state for index of current testimonial being viewed
   const [currentIndex, setCurrentIndex] = useState(0);
   const [aquaCarousel, setAquaCarousel] = useState([]);
+  const [aquaClasses, setAquaClasses] = useState([]);
 
 
   const handleClick = (index) => {
@@ -23,11 +25,17 @@ const AquaticWork = () => {
 
   useEffect(() => {
     const query = '*[_type == "aquaCarousel"]';
+    const classesQuery = '*[_type == "aquaClasses"]';
   
     client.fetch(query)
       .then((data) => {
 
       setAquaCarousel(data);
+
+      client.fetch(classesQuery)
+        .then((data) => {
+          setAquaClasses(data);
+      })
     })
 
   }, [])
@@ -71,8 +79,65 @@ const AquaticWork = () => {
           
         </div>
       </div>
+      <div className='swim-class-container'>
+        <>
+          {aquaClasses.length && (
+            <>
+              <div className='swim-class-card'>
+                <img src={urlFor(aquaClasses[currentIndex].imgurl)} alt={aquaClasses[currentIndex].name} />
+                <div className="swim-class-content">
+                  <h4><span><AiFillFolder /></span>Swimming Course</h4>
+                  <h1 className="bold-text">{aquaClasses[currentIndex].name}</h1>
+                  <p className="p-text">{aquaClasses[currentIndex].description}</p>
+                  <div className='swim-class-base'>
+                    <h5 className="p-text">{aquaClasses[currentIndex].price}</h5>
+                    <h6><span><AiFillFolder /></span>25 enrolled</h6>
+                  </div>
+                </div>
+              </div>
+              <div className='swim-class-card'>
+                <img src={urlFor(aquaClasses[currentIndex + 1].imgurl)} alt={aquaClasses[currentIndex + 1].name} />
+                <div className="swim-class-content">
+                  <h4><span><AiFillFolder /></span>Swimming Course</h4>
+                  <h1 className="bold-text">{aquaClasses[currentIndex + 1].name}</h1>
+                  <p className="p-text">{aquaClasses[currentIndex + 1].description}</p>
+                  <div className='swim-class-base'>
+                    <h5 className="p-text">{aquaClasses[currentIndex + 1].price}</h5>
+                    <h6><span><AiFillFolder /></span>25 enrolled</h6>
+                  </div>
+                </div>
+              </div>
+              <div className='swim-class-card'>
+                <img src={urlFor(aquaClasses[currentIndex + 2].imgurl)} alt={aquaClasses[currentIndex + 1].name} />
+                <div className="swim-class-content">
+                  <h4><span><AiFillFolder /></span>Swimming Course</h4>
+                  <h1 className="bold-text">{aquaClasses[currentIndex + 2].name}</h1>
+                  <p className="p-text">{aquaClasses[currentIndex + 2].description}</p>
+                  <div className='swim-class-base'>
+                    <h5 className="p-text">{aquaClasses[currentIndex + 2].price}</h5>
+                    <h6><span><AiFillFolder /></span>25 enrolled</h6>
+                  </div>
+                </div>
+              </div>
+              <div className='swim-class-card'>
+                <img src={urlFor(aquaClasses[currentIndex + 3].imgurl)} alt={aquaClasses[currentIndex + 1].name} />
+                <div className="swim-class-content">
+                  <h4><span><AiFillFolder /></span>Swimming Course</h4>
+                  <h1 className="bold-text">{aquaClasses[currentIndex + 3].name}</h1>
+                  <p className="p-text">{aquaClasses[currentIndex + 3].description}</p>
+                  <div className='swim-class-base'>
+                    <h5 className="p-text">{aquaClasses[currentIndex + 3].price}</h5>
+                    <h6><span><AiFillFolder /></span>25 enrolled</h6>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+        </>
+      </div>
       <p className='foot-note-paragraph'><span className='gradient__text'><a href="tel:+">Call Us</a></span> or <span className='gradient__text'> <a href="#contact-us">Leave us a Message</a></span> to discuss the best swimming classes and register your children.</p>
     </div>
+    
   )
 }
 
