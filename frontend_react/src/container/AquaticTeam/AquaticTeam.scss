@@ -1,0 +1,105 @@
+.makosail__aquatic__team {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.makosail__aquatic__team__intro-paragraph {
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: -0.56px;
+    color: var(--color-text);
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.bold-text {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--white-color);
+    text-align: left;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+}
+
+.p-text {
+    font-size: 1rem;
+    text-align: left;
+    color: var(--color-text);
+    line-height: 1.5;
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
+}
+
+.app__about {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.makosail__aquatic__team__profiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.makosail__aquatic__team__profile-item {
+    width: 330px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem;
+    overflow: hidden; 
+
+
+    img {
+        max-width: 100%;
+        // height: 310px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+
+    @media screen and (min-width: 2000px) {
+        width: 650px;
+        margin: 2rem 4rem;
+
+        img {
+            height: 600px;
+        }
+    }
+}
