@@ -4,6 +4,7 @@ import { MdOutlineGppGood } from 'react-icons/md';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import { AiFillFolder } from 'react-icons/ai';
+import { motion } from 'framer-motion';
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -83,7 +84,13 @@ const AquaticWork = () => {
         <>
           {aquaClasses.length && (
             <>
-              <div className='swim-class-card'>
+              <motion.div
+                            whileInView={{ opacity: 1 }}
+                            whileHover={{ scale: 1.1 }}
+                            transition={{ duration: 0.5, type: 'tween' }}
+                            className="swim-class-card"
+                            key={currentIndex}
+              >
                 <img src={urlFor(aquaClasses[currentIndex].imgurl)} alt={aquaClasses[currentIndex].name} />
                 <div className="swim-class-content">
                   <h4><span><AiFillFolder /></span>Swimming Course</h4>
@@ -94,8 +101,14 @@ const AquaticWork = () => {
                     <h6><span><AiFillFolder /></span>25 enrolled</h6>
                   </div>
                 </div>
-              </div>
-              <div className='swim-class-card'>
+              </motion.div>
+              <motion.div
+                            whileInView={{ opacity: 1 }}
+                            whileHover={{ scale: 1.1 }}
+                            transition={{ duration: 0.5, type: 'tween' }}
+                            className="swim-class-card"
+                            key={currentIndex}
+              >
                 <img src={urlFor(aquaClasses[currentIndex + 1].imgurl)} alt={aquaClasses[currentIndex + 1].name} />
                 <div className="swim-class-content">
                   <h4><span><AiFillFolder /></span>Swimming Course</h4>
@@ -106,8 +119,14 @@ const AquaticWork = () => {
                     <h6><span><AiFillFolder /></span>25 enrolled</h6>
                   </div>
                 </div>
-              </div>
-              <div className='swim-class-card'>
+              </motion.div>
+              <motion.div
+                            whileInView={{ opacity: 1 }}
+                            whileHover={{ scale: 1.1 }}
+                            transition={{ duration: 0.5, type: 'tween' }}
+                            className="swim-class-card"
+                            key={currentIndex}
+              >
                 <img src={urlFor(aquaClasses[currentIndex + 2].imgurl)} alt={aquaClasses[currentIndex + 1].name} />
                 <div className="swim-class-content">
                   <h4><span><AiFillFolder /></span>Swimming Course</h4>
@@ -118,8 +137,14 @@ const AquaticWork = () => {
                     <h6><span><AiFillFolder /></span>25 enrolled</h6>
                   </div>
                 </div>
-              </div>
-              <div className='swim-class-card'>
+              </motion.div>
+              <motion.div
+                            whileInView={{ opacity: 1 }}
+                            whileHover={{ scale: 1.1 }}
+                            transition={{ duration: 0.5, type: 'tween' }}
+                            className="swim-class-card"
+                            key={currentIndex}
+              >
                 <img src={urlFor(aquaClasses[currentIndex + 3].imgurl)} alt={aquaClasses[currentIndex + 1].name} />
                 <div className="swim-class-content">
                   <h4><span><AiFillFolder /></span>Swimming Course</h4>
@@ -130,7 +155,7 @@ const AquaticWork = () => {
                     <h6><span><AiFillFolder /></span>25 enrolled</h6>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </>
           )}
         </>
