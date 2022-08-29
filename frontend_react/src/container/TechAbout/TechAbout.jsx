@@ -8,7 +8,7 @@ const TechAbout = () => {
       <section>
         <div className="about-container">
           <div className="about-text-content">
-            <h1 className='gradient__text'>We're the Whole Package</h1>
+            <h1 className='gradient__text'>SEAMLESS SOFTWARE AND EXCEPTIONAL DIGITAL DESIGN.</h1>
             <p className="about-text-content-paragraph">Successful product development requires a balanced approach. We blend personalized, in-depth technical guidance with our global scale. By leveraging Agile development methodologies, human-centered design tools, and best practices around security and risk management, Makosail Technologies help organizations meet their needs reliably and efficiently</p>
             <div className="first-div">
               <div className="inner-second-div"></div>

@@ -5,7 +5,7 @@ import './TechHeader.scss'
 const TechHeader = () => {
   return (
     <div className='section__padding' id='tech'>
-      <section>
+      <section className='tech-header-container'>
         <div className="makosail__tech__content-container">
             <h1>End-to-End Custom Software Solutions</h1>
             <p>At Makosail Tech, we prioritize leveraging modern approaches to web development, we bring front-end, back-end, and architecture together to meet your business needs.</p>
