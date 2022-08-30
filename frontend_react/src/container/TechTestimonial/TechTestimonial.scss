@@ -1,6 +1,5 @@
 .tech-testimonial-container {
     color: var(--white-color);
-    border: 2px solid red;
 
     .tech-testimonial-content-container {
         width: 100%;
@@ -77,6 +76,7 @@
                 letter-spacing: 0.05em;
                 font-size: 0.875rem/* 14px */;
                 line-height: 1.25rem/* 20px */;
+                text-transform: uppercase;
             }
 
             .last-paragraph {
