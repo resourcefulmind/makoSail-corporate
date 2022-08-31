@@ -12,11 +12,16 @@ export default {
             name:'email',
             title:'Email',
             type:'string'
-        },
+        }, 
+        {
+            name:'messageTwo',
+            title:'Subject',
+            type:'text'
+        }, 
         {
             name:'message',
             title:'Message',
             type:'text'
-        }
+        }, 
     ]
 }
