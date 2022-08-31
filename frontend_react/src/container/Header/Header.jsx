@@ -1,6 +1,5 @@
 import React from 'react';
 
-// import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
 

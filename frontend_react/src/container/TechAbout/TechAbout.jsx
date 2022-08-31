@@ -67,7 +67,7 @@ const TechAbout = () => {
               </div>
             </div>
           </div>
-          <button className="cta-button">Let's Discuss Your Idea</button>
+          <button className="cta-button"><a href="#contact-us">Let's Discuss Your Idea</a></button>
         </div>
       </section>
     </div>

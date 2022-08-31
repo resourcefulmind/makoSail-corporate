@@ -15,7 +15,7 @@ const ConstructionAbout = () => {
               As an apex construction company, MakoSail offers procurement management services nationwide. We have set our ideal standards with a firm belief in win-win partnerships with our vendors and supplier partners across the globe, and building sustainable as well as long-term relationships for value creation in supply chain process. We have expertise in executing large and complex urban and industrial infrastructure projects.
             </p>
             <a href="#const-what-people-say" className='btn-2'>What Our Clients Say</a>
-            <a href="#contact_us" className='btn-2 btn-2-space'>Get a Quote</a>
+            <a href="#contact-us" className='btn-2 btn-2-space'>Get a Quote</a>
           </div>
         </div>
       </div>
